@@ -10,7 +10,7 @@ echo Slugifier::slugify($input, "-");
 ```twig
 {{ "String to be slugified"|slugify }}
 ```
-Don't forget to replace namespaces in ``Twig/SlugifyExtension.php`` and to define the extension in your services.yml:
+Don't forget to replace namespaces in ``Slugifier.php`` as well as in ``Twig/SlugifyExtension.php`` and to define the extension in your services.yml:
 ```yaml
 services:
     # TWIG EXTENSIONS
