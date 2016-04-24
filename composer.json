@@ -18,6 +18,6 @@
     "target-dir": "Eschmar/SlugifyBundle",
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "~2.4"
+        "symfony/symfony": ">2.7"
     }
 }

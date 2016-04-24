@@ -1,6 +1,11 @@
 # SlugifyBundle
 Provides static method to convert strings to slugs as well as a twig filter for symfony. If you only need the static class, you'll [find it here](Util/Slug.php).
 
+## Install
+```sh
+composer require eschmar/slugify-bundle dev-master
+```
+
 ## Usage
 ```php
 use Eschmar\SlugifyBundle\Util\Slug;
