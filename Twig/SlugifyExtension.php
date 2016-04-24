@@ -1,8 +1,8 @@
 <?php
 
-namespace Eschmar\TestBundle\Twig;
+namespace Eschmar\SlugifyBundle\Twig;
 
-use Eschmar\TestBundle\Helper\Slugifier;
+use Eschmar\SlugifyBundle\Util\Slug;
 
 class SlugifyExtension extends \Twig_Extension
 {
@@ -15,7 +15,7 @@ class SlugifyExtension extends \Twig_Extension
      * Returned filters extend twig and can be called in twig context
      *
      * @return array
-     * @author Marcel Eschmann
+     * @author Marcel Eschmann, @eschmar
      **/
     public function getFilters()
     {
@@ -28,10 +28,10 @@ class SlugifyExtension extends \Twig_Extension
      * Slugify strings
      *
      * @return string
-     * @author Marcel Eschmann
+     * @author Marcel Eschmann, @eschmar
      **/
     public function slugifyFilter($input)
     {
-        return Slugifier::slugify($input, "-");
+        return Slug::ify($input, "-");
     }
 }

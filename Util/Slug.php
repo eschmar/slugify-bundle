@@ -1,13 +1,13 @@
 <?php
 
-namespace Eschmar\TestBundle\Helper;
+namespace Eschmar\SlugifyBundle\Util;
 
 /**
  * Provides static method to convert strings to slugs.
  *
- * @author Marcel Eschmann
+ * @author Marcel Eschmann, @eschmar
  **/
-class Slugifier
+class Slug
 {
     protected static $rules = array(
         '°' => '0',
@@ -311,9 +311,9 @@ class Slugifier
      * Encodes a string to a url conform format
      *
      * @return string
-     * @author Marcel Eschmann
+     * @author Marcel Eschmann, @eschmar
      **/
-    public static function slugify($input, $seperator = "-")
+    public static function ify($input, $seperator = "-")
     {
         // escape special characters
         $result = str_replace(array_keys(self::$rules), array_values(self::$rules), $input);
@@ -328,4 +328,4 @@ class Slugifier
         return trim(strtolower($result));
     }
 
-} // END class Slugifier
+} // END class Slug

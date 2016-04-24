@@ -1,23 +1,16 @@
-# Slugify
-Provides static method to convert strings to slugs written in PHP. Includes TWIG filter.
+# SlugifyBundle
+Provides static method to convert strings to slugs as well as a twig filter for symfony. If you only need the static class, you'll [find it here](Util/Slug.php).
 
 ## Usage
 ```php
-echo Slugifier::slugify($input, "-");
+use Eschmar\SlugifyBundle\Util\Slug;
+$test = Slug::ify("String to be slugified");
+// results in $test == "string-to-be-slugified"
 ```
 
 ## Twig Extension
 ```twig
 {{ "String to be slugified"|slugify }}
-```
-Don't forget to replace namespaces in ``Slugifier.php`` as well as in ``Twig/SlugifyExtension.php`` and to define the extension in your services.yml:
-```yaml
-services:
-    # TWIG EXTENSIONS
-    eschmar.twig.slugify_extension:
-        class: Eschmar\TestBundle\Twig\SlugifyExtension
-        tags:
-            - { name: twig.extension }
 ```
 
 # License

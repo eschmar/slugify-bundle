@@ -1,0 +1,6 @@
+services:
+    # TWIG EXTENSION
+    eschmar.twig.slugify_extension:
+        class: Eschmar\SlugifyBundle\Twig\SlugifyExtension
+        tags:
+            - { name: twig.extension }

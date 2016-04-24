@@ -1,0 +1,23 @@
+{
+    "name": "eschmar/slugify-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": ["slug", "slugify", "symfony"],
+    "description": "Provides static method to convert strings to slugs and twig filter.",
+    "homepage": "https://github.com/eschmar/slugify-bundle",
+    "authors": [
+        {
+            "name": "Marcel Eschmann",
+            "homepage": "https://github.com/eschmar",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Eschmar\\SlugifyBundle": "" }
+    },
+    "target-dir": "Eschmar/SlugifyBundle",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.4"
+    }
+}
