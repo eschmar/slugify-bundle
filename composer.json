@@ -17,7 +17,7 @@
     },
     "target-dir": "Eschmar/SlugifyBundle",
     "require": {
-        "php": ">=5.3.3",
-        "symfony/symfony": ">2.7"
+        "php": ">=7.1.0",
+        "symfony/flex": "*"
     }
 }
