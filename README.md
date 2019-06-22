@@ -4,7 +4,8 @@ Provides static method to convert strings to slugs as well as a twig filter for 
 ## Install
 Composer (<a href="https://packagist.org/packages/eschmar/slugify-bundle" target="_blank">Packagist</a>):
 ```sh
-composer require eschmar/slugify-bundle dev-master
+composer require eschmar/slugify-bundle ~v2.0 # Symfony Flex
+composer require eschmar/slugify-bundle ~v1.0 # Symfony 2
 ```
 
 app/Appkernel.php:
